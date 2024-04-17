@@ -1,0 +1,24 @@
+<h1 mat-dialog-title>{{title}}</h1>
+<div mat-dialog-content>
+  <form [formGroup]="taskEditForm" >
+    <mat-form-field appearance="fill">
+      <mat-label>Task</mat-label>
+      <input matInput formControlName="taskName">
+    </mat-form-field>
+    <mat-form-field *ngIf="isedit">
+      <mat-label>Id</mat-label>
+      <input formControlName="id">
+      <mat-label>status</mat-label>
+      <input formControlName="status">
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button color="accent"  (click)="closeClick()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="save()"  cdkFocusInitial>Save</button>
+</div>
+
+<!-- <div mat-dialog-actions>
+  <button mat-raised-button color="accent"  (click)="closeClick()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="save()" cdkFocusInitial>Save</button>
+</div> -->

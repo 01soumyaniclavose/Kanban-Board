@@ -1,0 +1,47 @@
+<div class="kanban-board">
+    <div class="kanban-column to-do" (dragover)="onDragover($event)" (drop)="onDrop($event, 'ToDo')">
+        <h2>To Do</h2>
+        <div class="kanban-item" *ngFor="let item of filterTask('ToDo')" draggable="true"
+            (dragstart)="onDragstart(item)">
+            {{item.taskName}}
+            <div class="task-icons">
+                <button mat-icon-button (click)="editTask(item)">
+                    <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-icon-button (click)="deleteTask(item)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="kanban-column in-progress" (dragover)="onDragover($event)" (drop)="onDrop($event, 'Implementing')">
+        <h2>Implementing</h2>
+        <div class="kanban-item" *ngFor="let item of filterTask('Implementing')" draggable="true"
+            (dragstart)="onDragstart(item)">
+            {{item.taskName}}
+            <div class="task-icons">
+                <button mat-icon-button (click)="editTask(item)">
+                    <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-icon-button (click)="deleteTask(item)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="kanban-column done" (dragover)="onDragover($event)" (drop)="onDrop($event, 'Done')">
+        <h2>Done</h2>
+        <div class="kanban-item" *ngFor="let item of filterTask('Done')" draggable="true"
+            (dragstart)="onDragstart(item)">
+            {{item.taskName}}
+            <div class="task-icons">
+                <button mat-icon-button (click)="editTask(item)">
+                    <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-icon-button (click)="deleteTask(item)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

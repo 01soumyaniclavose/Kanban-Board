@@ -1,0 +1,59 @@
+{
+  "tasks": [
+    {
+      "id": "1",
+      "taskName": "Application layout",
+      "status": "Done"
+    },
+    {
+      "id": "2",
+      "taskName": "Application test",
+      "status": "ToDo"
+    },
+    {
+      "id": "3",
+      "taskName": "Edit task",
+      "status": "Done"
+    },
+    {
+      "id": "4",
+      "taskName": "landing page layout",
+      "status": "Done"
+    },
+    {
+      "id": "5",
+      "taskName": "Performance testing",
+      "status": "ToDo"
+    },
+    {
+      "id": "6",
+      "taskName": "Drag and drop functionality",
+      "status": "Done"
+    },
+    {
+      "id": "7",
+      "taskName": "Page login",
+      "status": "Implementing"
+    },
+    {
+      "id": "8",
+      "taskName": "Security implementation",
+      "status": "Implementing"
+    },
+    {
+      "id": "9",
+      "taskName": "Footer content",
+      "status": "ToDo"
+    },
+    {
+      "id": "10",
+      "taskName": "Brard layout",
+      "status": "Implementing"
+    },
+    {
+      "id": "11",
+      "taskName": "Repo migration",
+      "status": "ToDo"
+    }
+  ]
+}
