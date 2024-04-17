@@ -2,26 +2,34 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.7.
 
-## Development server
+## Introduction
+The Kanban Board application should have the following features:
+1.	The board should have three columns: “To Do”, “Implementing” and “Done”.
+2.	Each column should display tasks described as plain text.
+3.	There should be a form consisting of one text input field and a button allowing users to create new tasks. New tasks should be added to the “To Do” column.
+4.	There should be a way to move tasks between the columns(drag-and-drop)
+5.	There should be a way to remove tasks
+   
+## Libraries used 
+1.	Angular material v14 : https://v13.material.angular.io/
+2.	NGRX : https://ngrx.io/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Database
+JSON server 
+PATH: src/data/db.json
+RUN Command : json-server --watch src/data/db.json
+PORT : http://localhost:3000/tasks
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
+## Unit Testing
+Jasmin karma
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Step to run the application
+1.	Git Clone
+2.	npm install
+3.	Run JSON server
+4.	ng serve Navigate to `http://localhost:4200/`. 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Build
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
