@@ -67,6 +67,6 @@ export class TaskEditorComponentComponent implements OnInit {
   }
 
   getRandomTaskId(): number {
-    return this.randomId = Math.floor(Math.random() * 100); //NOTE: ID create function 
+    return this.randomId = Math.floor(Math.random() * 100); //NOTE: id create function 
   }
 }
