@@ -4,11 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Introduction
 The Kanban Board application should have the following features:
-1.	The board should have three columns: “To Do”, “Implementing” and “Done”.
-2.	Each column should display tasks described as plain text.
-3.	There should be a form consisting of one text input field and a button allowing users to create new tasks. New tasks should be added to the “To Do” column.
-4.	There should be a way to move tasks between the columns(drag-and-drop)
-5.	There should be a way to remove tasks
+1.	The board have three columns: “To Do”, “Implementing” and “Done”.
+2.	Each column display tasks described as plain text.
+3.	It have a form consisting of one text input field and a button allowing users to create new tasks. New tasks is add to the “To Do” column.
+4.	Drag-and-drop task between colums 
+5.	Delet task 
    
 ## Libraries used 
 1.	Angular material v14 : https://v13.material.angular.io/
